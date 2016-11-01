@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:webservice"
+             x:Class="webservice.MainPage">
+
+
+<StackLayout Orientation="Vertical">
+  <Button Text="Ajouter"
+          BackgroundColor="Blue"
+              FontSize="20"
+   Clicked="navigateto"/>
+
+  <Button Text="reraichir"
+              BackgroundColor="Green"
+              FontSize="20"
+   Clicked="refreshlist"/>
+  
+ <ListView x:Name="StudentListView" HasUnevenRows="True" ItemTapped="showinformations">
+      <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+
+            <Label Text="{Binding .Id}"
+                   WidthRequest="120"
+                   HorizontalTextAlignment="Start"/>
+          <Label Text="{Binding .Fullname}"
+                 FontSize="20"
+                 TextColor="Blue"
+                  HorizontalTextAlignment="Start"/>
+          
+          <Label Text="{Binding .Department}"
+                 FontSize="20"
+                 TextColor="Blue"
+          HorizontalTextAlignment="Start"/>
+            </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  
+  </StackLayout>
+
+</ContentPage>

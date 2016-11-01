@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="webservice.AddStudent">
+  <StackLayout Orientation="Vertical">
+    <Label Text="Full Name"/>
+    <Entry x:Name="name"/>
+      <Label Text="Department"/>
+    <Entry x:Name="department"/>
+    <Button Text="Ajouter"
+              BackgroundColor="Navy"
+              FontSize="20" Clicked="senddata"/>
+  </StackLayout>
+</ContentPage>
