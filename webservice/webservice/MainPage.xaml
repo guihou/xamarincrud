@@ -17,7 +17,7 @@
    Clicked="refreshlist"/>
   
  <ListView x:Name="StudentListView" HasUnevenRows="True"  ItemTapped="showinformations">
-      <ListView.ItemTemplate>
+      <ListView.ItemTemplate> 
       <DataTemplate>
         <ViewCell>
           <StackLayout Orientation="Horizontal" HorizontalOptions="End">
