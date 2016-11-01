@@ -16,7 +16,7 @@
               FontSize="20"
    Clicked="refreshlist"/>
   
- <ListView x:Name="StudentListView" HasUnevenRows="True" ItemTapped="showinformations">
+ <ListView x:Name="StudentListView" HasUnevenRows="True"  ItemTapped="showinformations">
       <ListView.ItemTemplate>
       <DataTemplate>
         <ViewCell>
